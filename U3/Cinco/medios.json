@@ -1,0 +1,70 @@
+[
+    {
+      "tipo": "television",
+      "nombre": "TV Pública",
+      "frecuencia": "Canal 7",
+      "audiencia": 500000,
+      "canales": [
+        {
+          "nombre": "Noticias",
+          "programas": [
+            {
+              "nombre": "Noticiero Central",
+              "inicio": "20:00",
+              "fin": "21:00"
+            },
+            {
+              "nombre": "Primera Mañana",
+              "inicio": "07:00",
+              "fin": "08:00"
+            }
+          ]
+        },
+        {
+          "nombre": "Deportes",
+          "programas": [
+            {
+              "nombre": "Fútbol Para Todos",
+              "inicio": "18:00",
+              "fin": "20:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "radio",
+      "nombre": "FM Rock",
+      "frecuencia": "99.1",
+      "audiencia": 120000,
+      "emisora": "Radio Rock",
+      "programacion": [
+        {
+          "nombre": "Rock & Roll",
+          "inicio": "10:00",
+          "fin": "12:00"
+        },
+        {
+          "nombre": "Noticias del Día",
+          "inicio": "13:00",
+          "fin": "14:00"
+        }
+      ]
+    },
+    {
+      "tipo": "prensa",
+      "nombre": "La Voz",
+      "frecuencia": "Diario",
+      "audiencia": 300000,
+      "tipo_publicacion": "diario",
+      "periodicidad": "Diaria"
+    },
+    {
+      "tipo": "prensa",
+      "nombre": "Revista Ciencia",
+      "frecuencia": "Mensual",
+      "audiencia": 50000,
+      "tipo_publicacion": "revista",
+      "periodicidad": "Mensual"
+    }
+  ]
