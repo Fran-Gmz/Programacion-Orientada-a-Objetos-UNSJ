@@ -1,0 +1,22 @@
+{% extends "base_template.html" %}
+{% block title %} home {% endblock %}
+{% block content %}
+ <section class="consultar">
+    <div class="consultar-div">
+        <h2 class="consultar-div-h2">Consultar Registros</h2>
+    
+        <form action="http://localhost:5002/consultar" method="post" class="consultar-div-form">
+            <label for="legajo" class="consultar-div-form-label">Numero de Legajo</label>
+            <input type="number" id="lejago" name="legajo" placeholder="EJEMPLO 1023" class="consultar-div-form-input" required>
+            <label for="dni" class="consultar-div-form-label">Cuatro Ultimas del Dni</label>
+            <input type="text" id="dni" name="dni" placeholder="EJEMPLO 2301" class="consultar-div-form-input" maxlength="4" required>
+            <label for="fechaInicio" class="consultar-div-form-label">Fecha de Inicio</label>
+            <input type="date" id="fechaInicio" name="fechaInicio" class="consultar-div-form-input" min="2025-06-01" max="2028-01-01" required>
+            <label for="fechaFinal" class="consultar-div-form-label">Fecha Final</label>
+            <input type="date" id="fechaInicio" name="fechaFinal" class="consultar-div-form-input" min="2025-06-01" max="2028-01-01" required>
+            <input type="submit" value="Consultar"  class="consultar-div-form-enviar">
+        </form>
+    </div>
+ </section>
+
+{% endblock %}

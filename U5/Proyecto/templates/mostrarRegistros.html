@@ -1,0 +1,39 @@
+{% extends "base_template.html" %}
+{% block title %} trabajadores {% endblock %}
+{% block content %}
+<section class="mostrarRegistros">
+    <table class="mostrarRegistros-table">
+        <thead class="mostrarRegistros-table-thead">
+            <tr class="mostrarRegistros-table-thead-tr">
+                <th class="mostrarRegistros-table-thead-tr-th">Fecha</th>
+                <th class="mostrarRegistros-table-thead-tr-th">Hora de Entrada</th>
+                <th class="mostrarRegistros-table-thead-tr-th">Hora de Salida</th>
+                <th class="mostrarRegistros-table-thead-tr-th">Dependencia</th>
+            </tr>
+        </thead>
+        <tbody class="mostrarRegistros-table-tbody">
+            {% for registro in registrosPorFecha %}
+                <tr class="mostrarRegistros-table-tbody-tr">
+                    <td class="mostrarRegistros-table-tbody-tr-td">{{ registro.fecha }}</td>
+                    <td class="mostrarRegistros-table-tbody-tr-td">{{ registro.horaEntrada }}</td>
+                    <td class="mostrarRegistros-table-tbody-tr-td">{{ registro.horaSalida }}</td>      
+                    <td class="mostrarRegistros-table-tbody-tr-td">
+                    {% if registro.dependencia == "D01" %}
+                        Edificio Central
+                    {% elif registro.dependencia == "D02" %}
+                        Talleres
+                    {% elif registro.dependencia  == "D03" %}
+                        Centro Deportivo
+                    {% else %}
+                        {{ registro.dependencia }}
+                    {% endif %}
+                    </td>
+                </tr>
+            {% endfor %}
+        </tbody>
+     </table>
+
+</section>    
+ 
+
+{% endblock %}

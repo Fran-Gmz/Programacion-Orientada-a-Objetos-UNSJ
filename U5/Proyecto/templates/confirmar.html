@@ -1,0 +1,24 @@
+{% extends "base_template.html" %}
+{% block title %} Confirmar {% endblock %}
+{% block content %}
+ <section class="confirmar">
+    <div class="confirmar-div">
+        <h3 class="confirmar-div-h3">Necesitamos Confirmación</h3>
+        {% if afirmacion == True %}
+
+            <h3 class="confirmar-div-h3">
+            {% if dependencia == "D01" %}
+                ¿Desea Registrar la Salida del Edifico Central?
+            {% elif dependencia == "D02" %}
+                ¿Desea Registrar la Salida de los Talleres?
+            {% elif dependencia == "D03" %}
+                ¿Desea Registrar la Salida del Centro Deportivo?
+            {% endif %}
+            </h3>
+       
+        {% endif %}
+        <a class="confirmar-div-a" href="{{ url_for('salidaConfirmada', idT = idTrabajador) }}">Confirmar</a>
+    </div>
+ </section>
+
+{% endblock %}

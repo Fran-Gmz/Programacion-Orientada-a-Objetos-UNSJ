@@ -1,0 +1,40 @@
+.confirmar{
+    width: 100%;
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.confirmar-div{
+    width: 400px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 20px;
+    background-color: var(--color--One);
+    gap: 40px;
+}
+.confirmar-div-h3{
+    text-align: center;
+    font-size: 25px;
+    font-weight: 700;
+    color: var(--color--Dos);
+    background-color: var(--color--One);
+    text-shadow: 1px 1px 1px var(--color--Dos);
+    margin: 0 15px;
+}
+.confirmar-div-a{
+    font-size: 20px;
+    font-weight: 700;
+    padding: 10px 20px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 7px var(--color--Dos);
+    background-color: var(--color--Dos);
+    color: var(--color--One);
+    transition: 500ms;
+}
+.confirmar-div-a:hover{
+    padding: 10px 25px;
+}

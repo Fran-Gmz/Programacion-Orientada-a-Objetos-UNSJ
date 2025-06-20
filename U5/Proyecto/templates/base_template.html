@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/style.css">
+    <title>{% block title %} {% endblock %}</title>
+</head>
+<body>
+    <header class="header">
+        <h2 class="header-h2">Nuevo Horizonte</h2>
+        <nav class="header-nav">
+            <ul class="header-nav-ul">
+                <li class="header-nav-ul-li">
+                    <a class="header-nav-ul-li-a" href="{{url_for('home')}}">Control de Horarios del Personal</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    {% block content %} {% endblock %}
+</body>
+</html>

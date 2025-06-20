@@ -1,0 +1,74 @@
+.mostrarRegistros{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mostrarRegistros-table{
+    width: 100%;
+    height: auto;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    box-shadow: 1px 1px 20px var(--color--Blanco);
+    border: 5px solid var(--color--Blanco);
+    background-color: var(--color--Blanco);
+    color: var(--color--Black);
+    overflow: hidden;
+}
+.mostrarRegistros-table-thead{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 25px;
+}
+.mostrarRegistros-table-thead-tr{
+    width: 100%;
+    display: flex;
+    padding: 10px 10px 0 10px;
+    justify-content: space-between;
+    background-color: var(--color--Gris);
+    
+}
+
+.mostrarRegistros-table-thead-tr-th{
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mostrarRegistros-table-tbody{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 20px;
+    margin: 5px 0 0 0;
+    gap: 5px;
+    
+}
+.mostrarRegistros-table-tbody-tr{
+    width: 100%;
+    display: flex;
+    padding: 0 10px;
+    justify-content: space-between;
+}
+.mostrarRegistros-table-tbody-tr-td{
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mostrarRegistros-table-tbody-tr:nth-child(odd){
+    background-color: var(--color--GrisDos);
+}
+.mostrarRegistros-table-tbody-tr:nth-child(even){
+    background-color: var(--color--Gris);
+}

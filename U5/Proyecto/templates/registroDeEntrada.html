@@ -1,0 +1,23 @@
+{% extends "base_template.html" %}
+{% block title %} RegistroEntrada {% endblock %}
+{% block content %}
+    <section class="entrada">
+        <div class="entrada-div">
+            <h2 class="entrada-div-h2">Registro Horario de Entrada</h2>
+        
+            <form action="http://localhost:5002/entrada" method="post" class="entrada-div-form">
+                <label for="legajo" class="entrada-div-form-label">Numero de Legajo</label>
+                <input type="number" id="lejago" name="legajo" placeholder="EJEMPLO 1023" class="entrada-div-form-input" required>
+                <label for="dni" class="entrada-div-form-label">Cuatro Ultimas del Dni</label>
+                <input type="int" id="dni" name="dni" placeholder="EJEMPLO 2301" class="entrada-div-form-input" maxlength="4" required>
+                <label for="dependencia" class="entrada-div-form-label">Dependencia</label>
+                <select name="dependencia" id="dependencia" class="entrada-div-form-selec" required>
+                    <option value="D01">Edificio Central</option>
+                    <option value="D02">Talleres</option>
+                    <option value="D03">Centro Deportivo</option>
+                </select>
+                <input type="submit" value="Registrar Entrada"  class="entrada-div-form-enviar">
+            </form>
+        </div>
+    </section>
+{% endblock %}

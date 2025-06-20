@@ -1,0 +1,16 @@
+{% extends "base_template.html" %}
+{% block title %} RegistroSalida {% endblock %}
+{% block content %}
+    <section class="salida">
+        <div class="salida-div">
+            <h2 class="salida-div-h2">Registro Horario de Salida</h2>
+            <form action="http://localhost:5002/salida" method="post" class="salida-div-form">
+                <label for="legajo" class="salida-div-form-label">Numero de Legajo</label>
+                <input type="number" id="lejago" name="legajo" placeholder="EJEMPLO 1023" class="salida-div-form-input" required>
+                <label for="dni" class="salida-div-form-label">Cuatro Ultimas del Dni</label>
+                <input type="text" id="dni" name="dni" placeholder="EJEMPLO 2301" class="salida-div-form-input" maxlength="4" required>
+                <input type="submit" value="Registrar Salida"  class="salida-div-form-enviar">
+            </form>
+        </div>
+    </section>
+{% endblock %}

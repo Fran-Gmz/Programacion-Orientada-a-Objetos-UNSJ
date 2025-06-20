@@ -1,0 +1,24 @@
+@import url('variables.css');
+@import url('base_template.css');
+@import url('home.css');
+@import url('entrada.css');
+@import url('respuesta.css');
+@import url('salida.css');
+@import url('confirmar.css');
+@import url('consultar.css');
+@import url('mostrarRegistro.css');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+body{
+    background-color: var(--color--Tres);
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}

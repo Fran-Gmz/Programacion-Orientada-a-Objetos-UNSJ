@@ -1,0 +1,15 @@
+{% extends "base_template.html" %}
+{% block title %} home {% endblock %}
+{% block content %}
+ <section class="home">
+    <div class="home-opciones">
+        <h2 class="home-opciones-title">Control de Horarios del personal</h2>
+        <div class="home-opciones-hiper">
+            <a class="home-opciones-hiper-a" href="{{ url_for('registrarEntrada')}}">Registrar Entrada</a>
+            <a class="home-opciones-hiper-a" href="{{ url_for('registrarSalida')}}">Registrar Salida</a>
+            <a class="home-opciones-hiper-a" href="{{ url_for('consultarRegistros')}}">Consultar Registros</a>
+        </div>
+    </div>
+ </section>
+
+{% endblock %}
